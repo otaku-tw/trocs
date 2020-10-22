@@ -1,0 +1,47 @@
+{
+	"p1": {
+		"width": 199,
+		"height": 237,
+		"story": "P1 Test"
+	},
+	"p2": {
+		"width": 293,
+		"height": 239,
+		"story": "P2 Test"
+	},
+	"p3": {
+		"width": 239,
+		"height": 314,
+		"story": "P3 Test"
+	},
+	"p4": {
+		"width": 361,
+		"height": 242,
+		"story": "P4 Test"
+	},
+	"p5": {
+		"width": 444,
+		"height": 244,
+		"story": "P5 Test"
+	},
+	"p6": {
+		"width": 358,
+		"height": 242,
+		"story": "P6 Test"
+	},
+	"p7": {
+		"width": 236,
+		"height": 155,
+		"story": "P7 Test"
+	},
+	"p8": {
+		"width": 237,
+		"height": 247,
+		"story": "P8 Test"
+	},
+	"p9": {
+		"width": 236,
+		"height": 171,
+		"story": "P9 Test"
+	}
+}

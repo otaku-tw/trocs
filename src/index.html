@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TROCS</title>
+	<meta charset="utf-8">
+	<link rel=icon href="favicon.svg" type="image/svg+xml">
+	<link rel="manifest" href="manifest.json">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+		* {
+			font-family: monospace;
+		}
+		.ori {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			transform: translate(50%, 50%);
+		}
+		.ori > .mask {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			transform: translate(-50%, -50%);
+			background-color: rgba(0, 0, 0, 0.6);
+		}
+		#camera {
+			position: absolute;
+			height: 100%;
+			transform: translate(-50%, -50%);
+		}
+		#bg {
+			position: absolute;
+			transform: translate(-50%, -50%);
+		}
+		.container-fluid {
+			position: absolute;
+		}
+		#title {
+			font-size: 50px;
+		}
+		#title-all {
+			font-size: 20px;
+		}
+		.btn {
+			width: 40%;
+			height: 60%;
+			font-size: 10px;
+		}
+		#about {
+			transform: translate(-50%, -60%);
+			width: 70%;
+			height: 60%;
+		}
+	</style>
+</head>
+<body style="background-color: #005AB5;">
+	<div class="ori">
+		<!-- <img id="bg" src="img/bg.jpg"> -->
+		<video id="camera" autoplay playsinline></video>
+		<div class="mask"></div>
+	</div>
+	<div class="container-fluid text-center" style="height: 100%; color: white;">
+		<div class="row align-items-center justify-content-center" style="height: 40%;">
+			<img src="img/fuck.cht.png" style="width: 50%; background-color: white;">
+		</div>
+		<div class="row" style="height: 25%;">
+			<div class="col-12"><p id="title">T R O C S</p></div>
+			<div class="col-12"><p id="title-all">The Reality Of Catholic Spirits</p></div>
+		</div>
+		<div class="row" style="height: 5%;"></div>
+		<div class="row" style="height: 30%;">
+			<div class="col-12 col-md-4"><button type="button"class="btn btn-success" onclick="location.href='ar.html';">AR Mode</button></div>
+			<div class="col-12 col-md-4"><button type="button"class="btn btn-danger" onclick="location.href='demo.html';">Demo Mode</button></div>
+			<div class="col-12 col-md-4"><button type="button"class="btn btn-primary" onclick="$('#card-wrapper').show();">About Us</button></div>
+			<div class="col-12"></div>
+		</div>
+	</div>
+	<div class="ori" id="card-wrapper" style="display: none;">
+		<div class="mask" onclick="$('#card-wrapper').hide();"></div>
+		<div class="card" id="about">
+			<div class="card-header">
+				About Us
+				<button type="button" class="close" aria-label="Close" onclick="$('#card-wrapper').hide();">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="card-body">
+				<div style="overflow-y: auto; height: 100%;">
+					<h5 class="card-title">Test</h5>
+					<p class="card-text">test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/jquery-3.5.1.slim.min.js"></script>
+<script>
+	$(document).ready(function(){
+			$(window).resize(function(){
+			$('#camera').height($('window').height());
+			$('#camera').width($('window').width());
+		});
+	});
+	let camera = document.getElementById('camera');
+	let mode = 1;
+	let constraints = [{video:{facingMode:"user"}},
+						{video:{facingMode:{exact:"environment"}}}];
+	if('mediaDevices' in navigator){
+		startCamera();
+	}
+	function startCamera(){
+		navigator.mediaDevices.getUserMedia(constraints[mode])
+			.then(function(stream){
+				camera.srcObject = stream;
+			})
+			.catch(function(e){
+				mode = (mode + 1) % 2;
+				startCamera();
+			});
+	}
+	// if('serviceWorker' in navigator) {
+	// 	window.addEventListener('load', () => {
+	// 		navigator.serviceWorker.register('/sw.js')
+	// 			.then(reg => console.log('ServiceWorker registration successful'))
+	// 			.catch(err => console.log('ServiceWorker registration failed:', err));
+	// 	});
+	// }
+</script>
+</html>

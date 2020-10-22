@@ -1,0 +1,26 @@
+{
+	"name": "FJU CSIE TROCS",
+	"short_name": "TROCS",
+	"icons": [
+		{
+			"src": "/img/icon/icon-512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		},
+		{
+			"src": "/img/icon/icon-64.png",
+			"type": "image/png",
+			"sizes": "64x64"
+		},
+		{
+			"src": "/img/icon/icon-32.png",
+			"type": "image/png",
+			"sizes": "32x32"
+		}
+	],
+	"start_url": "/",
+	"scope": "/",
+	"display": "standalone",
+	"background_color": "#005AB5",
+	"theme_color": "#005AB5"
+}
