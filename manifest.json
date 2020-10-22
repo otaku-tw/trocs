@@ -3,9 +3,9 @@
 	"short_name": "TROCS",
 	"icons": [
 		{
-			"src": "/img/icon/icon-512.png",
+			"src": "/img/icon/icon-256.png",
 			"type": "image/png",
-			"sizes": "512x512"
+			"sizes": "256x256"
 		},
 		{
 			"src": "/img/icon/icon-64.png",
