@@ -37,15 +37,24 @@
 			position: absolute;
 		}
 		#title {
-			font-size: 50px;
+			font-size: 15vw;
 		}
 		#title-all {
-			font-size: 20px;
+			font-size: 5vw;
 		}
-		.btn {
-			width: 40%;
-			height: 60%;
-			font-size: 10px;
+		@media only screen and (min-width: 0px) and (max-width: 767px){
+			.btn {
+				width: 40%;
+				height: 50%;
+				font-size: 3vw;
+			}
+		}
+		@media only screen and (min-width: 768px){
+			.btn {
+				width: 70%;
+				height: 20%;
+				font-size: 3vw;
+			}
 		}
 		#about {
 			transform: translate(-50%, -60%);
@@ -61,19 +70,17 @@
 		<div class="mask"></div>
 	</div>
 	<div class="container-fluid text-center" style="height: 100%; color: white;">
-		<div class="row align-items-center justify-content-center" style="height: 40%;">
-			<img src="img/icon/main.png" style="width: 50%">
+		<div id="banner-area" class="row align-items-center justify-content-center" style="height: 35%;">
+			<img src="img/icon/main.png" style="width: 50%; max-width: 350px;">
 		</div>
-		<div class="row" style="height: 25%;">
+		<div id="title-area" class="row align-items-center" style="height: 25%;">
 			<div class="col-12"><p id="title">T R O C S</p></div>
 			<div class="col-12"><p id="title-all">The Reality Of Catholic Spirits</p></div>
 		</div>
-		<div class="row" style="height: 5%;"></div>
-		<div class="row" style="height: 30%;">
+		<div id="button-area" class="row align-items-center" style="height: 30%;">
 			<div class="col-12 col-md-4"><button type="button"class="btn btn-success" onclick="location.href='ar.html';">AR Mode</button></div>
 			<div class="col-12 col-md-4"><button type="button"class="btn btn-danger" onclick="location.href='demo.html';">Demo Mode</button></div>
 			<div class="col-12 col-md-4"><button type="button"class="btn btn-primary" onclick="$('#card-wrapper').show();">About Us</button></div>
-			<div class="col-12"></div>
 		</div>
 	</div>
 	<div class="ori" id="card-wrapper" style="display: none;">
@@ -85,11 +92,19 @@
 					<span aria-hidden="true">&times;</span>
 				</button>
 			</div>
-			<div class="card-body">
-				<div style="overflow-y: auto; height: 100%; -webkit-overflow-scrolling: touch;">
-					<h5 class="card-title">Test</h5>
-					<p class="card-text">test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text! test text!</p>
-				</div>
+			<div class="card-body overflow-auto">
+				<h5 class="card-title">Intro</h5>
+				<p class="card-text">大家好~</p>
+				<p class="card-text">我們是輔仁大學資工系，很開心有這次的機會能與醫學院合作，利用 AR 技術並與醫學院國璽樓的歷史人文牆結合，將其所代表的象徵與精神展現給各位。</p>
+				<p class="card-text">一開始對於如何有好的呈現我們想了許多的方法，例如 : Markerless、8th-Wall … 等，經過一次又一次的嘗試以及失敗，我們剃除了一個又一個的方法，經過取捨找了一個最穩定的方法，就是利用 Marker。</p>
+				<h5 class="card-title">How To</h5>
+				<p class="card-text">1. 打開 AR 模式，將鏡頭對準你想要的壁畫 (記得要照到右上角的 Marker 喔)</p>
+				<p class="card-text">2. 點擊你想了解的壁畫會出現紅框</p>
+				<p class="card-text">3. 你可以選擇觀看小短片</p>
+				<p class="card-text">4. 如果小短片不夠，還有文字的故事敘述可以看喔</p>
+				<h5 class="card-title">Bug Report</h5>
+				<p class="card-text">如果在使用上遇到任何問題，還請不吝指教 <(_ _)></p>
+				<p class="card-text">回報請點此 => <a href="">我是 Google 表單</a></p>
 			</div>
 		</div>
 	</div>
