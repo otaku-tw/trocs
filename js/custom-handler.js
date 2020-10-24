@@ -75,7 +75,8 @@ AFRAME.registerComponent('markerhandler', {
 				imgEl.setAttribute('src', '#' + id + '_ori');
 				imgEl.setAttribute('width', muralData[id].width);
 				imgEl.setAttribute('height', muralData[id].height);
-				imgEl.setAttribute('scale', '0.005 0.005');
+				imgEl.setAttribute('scale', '0.032035175879397 0.032035175879397');
+				// imgEl.setAttribute('position', muralData[id].position);
 				imgEl.setAttribute('rotation', '-90');
 				imgEl.setAttribute('class', 'clickable');
 				imgEl.setAttribute('click-handler', '');
