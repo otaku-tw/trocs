@@ -2,55 +2,55 @@
 	"p1": {
 		"width": 199,
 		"height": 237,
-		"position": "-2.6875  , 0 , 4.51875",
+		"position": "-2.6875 0 4.91875",
 		"story": "P1 Test"
 	},
 	"p2": {
 		"width": 293,
 		"height": 239,
-		"position": "-4.51875 , 0 , 3.78125",
+		"position": "-3.81875 0 5.18125",
 		"story": "P2 Test"
 	},
 	"p3": {
 		"width": 239,
 		"height": 314,
-		"position": "-5.91875 , 0 , 5.3125",
+		"position": "-4.91875 0 3.3125",
 		"story": "P3 Test"
 	},
 	"p4": {
 		"width": 361,
 		"height": 242,
-		"position": "-5.1875  , 0 , 4.58125",
+		"position": "-5.8875 0 5.08125",
 		"story": "P4 Test"
 	},
 	"p5": {
 		"width": 444,
 		"height": 244,
-		"position": "-5.7625  , 0 , 4.5125",
+		"position": "-6.7625 0 5.5125",
 		"story": "P5 Test"
 	},
 	"p6": {
 		"width": 358,
 		"height": 242,
-		"position": "-504375  , 0 , 4.53125",
+		"position": "-6.04375 0 5.53125",
 		"story": "P6 Test"
 	},
 	"p7": {
 		"width": 236,
 		"height": 155,
-		"position": "-4.45625 , 0 , 1.95625",
+		"position": "-5.45625 0 2.65625",
 		"story": "P7 Test"
 	},
 	"p8": {
 		"width": 237,
 		"height": 247,
-		"position": "-4.3875  , 0 , 2.98125",
+		"position": "-5.3875 0 2.98125",
 		"story": "P8 Test"
 	},
 	"p9": {
 		"width": 236,
 		"height": 171,
-		"position": "-4.40625 , 0 , 1.21875",
+		"position": "-5.40625 0 1.21875",
 		"story": "P9 Test"
 	}
 }
