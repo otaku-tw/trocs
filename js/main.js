@@ -72,9 +72,7 @@ function startbtn(){
         movieEl.setAttribute("src","movie/" + preEl.id +".mp4" );
         movieEl.setAttribute("class", "Movie");
         movieEl.setAttribute("id", "MovieW");
-        movieEl.setAttribute("width", "854");
-        movieEl.setAttribute("height", "400");
-        movieEl.setAttribute("controls", "controls");
+        movieEl.setAttribute("width", "95%");
         movieEl.setAttribute("autoplay", "autoplay");
         movieEl.setAttribute("loop", "loop");
         document.body.appendChild(movieEl);
