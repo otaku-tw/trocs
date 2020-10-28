@@ -3,8 +3,81 @@
 <head>
 	<title>Offline | TROCS</title>
 	<link rel=icon href="favicon.ico" type="image/vnd.microsoft.icon">
+	<style>
+		* {
+			box-sizing: border-box;
+			text-align: center;
+		}
+		body {
+			background-color: #061072;
+			font-family: monospace;
+			color: #fff;
+			margin: 0;
+			padding: 0;
+		}
+		header, #banner, section {
+			margin: 0 auto;
+		}
+		header, #banner, section {
+			width: 80%;
+		}
+		header {
+			padding: 10px;
+			background-color: #ADADAD;
+			font-size: 2vw;
+			text-align: center;
+			display: inline-block;
+		}
+		#banner{
+			border: 8px solid #fff;
+			padding: 40px;
+			margin: 100px auto;
+			max-width: 600px;
+			text-align: center;
+		}
+		#msg {
+			background-color: #000;
+			padding: 100px;
+			color: #A9A9A9;
+			font-size: 2vw;
+			line-height: 2em;
+			margin-top: 50px;
+		}
+		blink, .blink {
+			-webkit-animation: blink 1.3s step-end infinite;
+			-moz-animation: blink 1.3s step-end infinite;
+			-o-animation: blink 1.3s step-end infinite;
+			animation: blink 1.3s step-end infinite;
+		}
+		@-webkit-keyframes blink {
+			67% { opacity: 0 }
+		}
+		@-moz-keyframes blink {
+			67% { opacity: 0 }
+		}
+		@-o-keyframes blink {
+			67% { opacity: 0 }
+		}
+		@keyframes blink {
+			67% { opacity: 0 }
+		}
+		#title {
+			margin-top: 50px;
+			font-size: 5vw;
+		}
+	</style>
 </head>
 <body>
-	<h1>You don't connect to internet !</h1>
+	<header>
+		<h1>The Reality Of Catholic Spirits</h1>
+	</header>
+	<h1 id="title">Error Page by TROCS</h1>
+	<div id="banner">
+		<img src="img/icon/icon.rev.nobg.png" width="100%">
+	</div>
+	<section id="msg">
+		<h1 class="blink">You don't connect to internet !</h1>
+		<p>Please check your connection.</p>
+	</section>
 </body>
 </html>
