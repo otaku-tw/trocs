@@ -44,7 +44,7 @@ self.addEventListener('fetch', e => {
 				else return fetch(e.request);
 			})
 			.catch(err => {
-				if(e.request.url.includes('ar.html')){
+				if(e.request.url.includes('ar.html') || e.request.url.includes('demo.html')){
 					return caches.match('/offline.html');
 				}
 			})
