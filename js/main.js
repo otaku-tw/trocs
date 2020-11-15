@@ -49,7 +49,13 @@ function showText() {
         var Odiv=document.createElement("div");
         Odiv.id="box";
         Odiv.className="ex3";
-        Odiv.innerHTML = muralData[preEl.id].story;
+        let div_title = document.createElement("div");
+        let div_content = document.createElement("div");
+        div_title.innerHTML = muralData[preEl.id].title;
+        div_content.innerHTML = muralData[preEl.id].story;
+        div_title.className = "ex3_title";
+        Odiv.appendChild(div_title);
+        Odiv.appendChild(div_content);
         document.body.appendChild(Odiv);
         document.getElementById("show-text").innerHTML="Close Text";
         document.getElementById("MovieW").style.top = "30%";
