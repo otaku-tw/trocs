@@ -44,8 +44,8 @@
 		height:30%;
 		border-radius: 20px; 
 		background:#ffffff; 
-		line-height:20px; 
-		font-size: 2vw;
+		line-height:4vw; 
+		font-size: 3vw;
 		padding: 2.5%;
 		z-index:11; 
 		position:absolute; 
@@ -55,8 +55,9 @@
 	}
 	.ex3_title {
 		text-align: center;
-		font-size: 3vw;
+		font-size: 5vw;
 		font-weight: bold;
+		line-height: 5vw;
 		margin-bottom: 5vw;
 	}
 }
