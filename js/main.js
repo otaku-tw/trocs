@@ -86,6 +86,7 @@ function startbtn(){
 }
 
 function closebtn(){
+    showText();
     if(TextWindow){
         TextWindow = false;
         var del = document.getElementById("box");

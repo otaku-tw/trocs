@@ -18,7 +18,7 @@ AFRAME.registerComponent('click-handler', {
 				preEl = null;
 				targList.innerText = "Start Video";
 				targList.style.visibility = "hidden";
-				document.getElementById("buttons_area2").style.visibility = "hidden"
+				document.getElementById("buttons_area2").style.visibility = "hidden";
 				if(TextWindow){
 					var del = document.getElementById("box");
         			del.parentNode.removeChild(del);
