@@ -76,7 +76,7 @@ AFRAME.registerComponent('markerhandler', {
 				imgEl.setAttribute('width', muralData[id].width);
 				imgEl.setAttribute('height', muralData[id].height);
 				imgEl.setAttribute('scale', '0.032035175879397 0.032035175879397');
-				imgEl.setAttribute('position', muralData[id].position);
+				// imgEl.setAttribute('position', muralData[id].position);
 				imgEl.setAttribute('rotation', '-90');
 				imgEl.setAttribute('class', 'clickable');
 				imgEl.setAttribute('click-handler', '');
@@ -84,5 +84,14 @@ AFRAME.registerComponent('markerhandler', {
 				firstGen[id] = true;
 			}
 		});
+		// this.el.addEventListener('markerLost', function(e){
+		// 	id = this.id;
+		// 	if(firstGen[id]){
+		// 		let el = document.getElementById(id);
+		// 		let imgEl = document.getElementById(id);
+		// 		el.removeChild(imgEl);
+		// 		firstGen[id] = false;
+		// 	}
+		// });
 	}
 });
